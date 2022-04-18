@@ -1,0 +1,104 @@
+[debug] [2022-04-18T17:32:55.038Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T17:32:55.041Z] Command:       /home/woopark/.nvm/versions/node/v17.3.0/bin/node /usr/bin/firebase init
+[debug] [2022-04-18T17:32:55.042Z] CLI Version:   9.16.6
+[debug] [2022-04-18T17:32:55.042Z] Platform:      linux
+[debug] [2022-04-18T17:32:55.042Z] Node Version:  v17.3.0
+[debug] [2022-04-18T17:32:55.043Z] Time:          Tue Apr 19 2022 02:32:55 GMT+0900 (Korean Standard Time)
+[debug] [2022-04-18T17:32:55.044Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-18T17:32:55.060Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T17:32:55.061Z] > authorizing via signed-in user (gglizzing@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /mnt/c/Users/ggliz/Desktop/Coding/school/cse323/HW2
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-04-18T17:33:06.680Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-04-18T17:33:07.539Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-04-18T17:33:07.540Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project cse323-hw (cse323-hw) 
+[info] 
+=== Firestore Setup
+[debug] [2022-04-18T17:33:10.360Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-18T17:33:10.360Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-18T17:33:10.586Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 18 Apr 2022 17:33:10 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:33:10.633Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/cse323-hw/services/firestore.googleapis.com  
+ 
+[debug] [2022-04-18T17:33:11.871Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 Apr 2022 17:33:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:33:11.872Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/cse323-hw  
+ 
+[debug] [2022-04-18T17:33:12.304Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 Apr 2022 17:33:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:33:12.306Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-04-18T17:33:12.307Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T17:33:12.307Z] > authorizing via signed-in user (gglizzing@gmail.com)
+[debug] [2022-04-18T17:33:12.308Z] [iam] checking project cse323-hw for permissions ["firebase.projects.get"]
+[debug] [2022-04-18T17:33:12.309Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cse323-hw:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-04-18T17:33:13.122Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 Apr 2022 17:33:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=569","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-04-18T17:33:34.049Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/cse323-hw/releases?pageSize=10&pageToken=  
+ 
+[debug] [2022-04-18T17:33:35.318Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 Apr 2022 17:33:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:33:35.319Z] Found ruleset: projects/cse323-hw/rulesets/3c50f429-e5ed-4d61-806b-51e1ac48a6bb
+[debug] [2022-04-18T17:33:35.319Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/cse323-hw/rulesets/3c50f429-e5ed-4d61-806b-51e1ac48a6bb  
+ 
+[debug] [2022-04-18T17:33:36.567Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 Apr 2022 17:33:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-04-18T17:33:40.557Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/cse323-hw/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2022-04-18T17:33:40.558Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/cse323-hw/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2022-04-18T17:33:41.324Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 Apr 2022 17:33:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-18T17:33:42.473Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 Apr 2022 17:33:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at /mnt/c/Users/ggliz/Desktop/Coding/school 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=68398556&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-04-18T17:33:46.549Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"3188992cc80952b6a9cf","redirect_uri":"http://localhost:9005","state":"68398556"}
+[debug] [2022-04-18T17:33:46.891Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 18 Apr 2022 17:33:46 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"bb7a6b7ec47d2b33adf568a514a98d14\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"3243:5EC4:137DCC:299A05:625DA0FA"}
+[debug] [2022-04-18T17:33:46.933Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-04-18T17:33:47.444Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-04-18T17:33:47.445Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"woohyun-park","id":76129901,"node_id":"MDQ6VXNlcjc2MTI5OTAx","avatar_url":"https://avatars.githubusercontent.com/u/76129901?v=4","gravatar_id":"","url":"https://api.github.com/users/woohyun-park","html_url":"https://github.com/woohyun-park","followers_url":"https://api.github.com/users/woohyun-park/followers","following_url":"https://api.github.com/users/woohyun-park/following{/other_user}","gists_url":"https://api.github.com/users/woohyun-park/gists{/gist_id}","starred_url":"https://api.github.com/users/woohyun-park/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/woohyun-park/subscriptions","organizations_url":"https://api.github.com/users/woohyun-park/orgs","repos_url":"https://api.github.com/users/woohyun-park/repos","events_url":"https://api.github.com/users/woohyun-park/events{/privacy}","received_events_url":"https://api.github.com/users/woohyun-park/received_events","type":"User","site_admin":false,"name":"Woohyun Park","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":24,"public_gists":0,"followers":7,"following":6,"created_at":"2020-12-16T20:31:50Z","updated_at":"2022-04-07T04:15:13Z","private_gists":0,"total_private_repos":30,"owned_private_repos":28,"disk_usage":407652,"collaborators":2,"two_factor_authentication":false,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] ✔  Success! Logged into GitHub as woohyun-park 
+[info] 
+[debug] [2022-04-18T17:34:19.572Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-04-18T17:34:19.845Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-04-18T17:34:19.845Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-04-18T17:34:20.734Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-04-18T17:34:21.004Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-04-18T17:34:21.005Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quiz Game</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link href="./quiz.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Your HTML here-->
+    <div class="box">
+      <h1>Do you know the capital of this country?</h1>
+      <table>
+        <tr>
+          <th>Country</th>
+          <th>Capital</th>
+          <th>Answer</th>
+        </tr>
+        <tr id="quiz">
+          <td id="quiz-question"></td>
+          <td><input id="quiz-answer" /></td>
+          <td><button id="quiz-submit">See Answer</button></td>
+        </tr>
+        <tr id="filter">
+          <td colspan="3"><input id="all" type="radio" name="filter" checked>All</input>
+          <input id="correct" type="radio" name="filter">Correct Only</input>
+          <input id="incorrect" type="radio" name="filter">Wrong Only</input>
+          <button id="clear">clear</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="firebase.js"></script>
+    <script src="./quiz.js"></script>
+  </body>
+</html>
