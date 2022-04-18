@@ -103,6 +103,7 @@ const addPrevQuestions = (capital, country, answer) => {
         country,
         answer,
         status: true,
+        createdAt: new Date(),
       })
       .then((docRef) => {
         id = docRef.id;
@@ -121,6 +122,7 @@ const addPrevQuestions = (capital, country, answer) => {
         country,
         answer,
         status: false,
+        createdAt: new Date(),
       })
       .then((docRef) => {
         id = docRef.id;
@@ -152,6 +154,7 @@ const addDeleteEvent = (id) => {
 
 const loadHistory = () => {
   db.collection("history")
+    .orderBy("createdAt")
     .get()
     .then((querySnapshot) => {
       const arr = [];
